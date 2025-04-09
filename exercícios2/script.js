@@ -32,7 +32,7 @@ function verificar(){
         } else if(idade > 120){
             //MORTO
             document.getElementById('res').innerHTML = `Você é um fantasma com ${idade} de idade??`
-            img.src = 'caveiradoidona.jpg'
+            img.src = 'caveira.jpg'
         }
     } else if (rads[1].checked){
         gênero = 'mulher'
@@ -59,7 +59,7 @@ function verificar(){
         } else if(idade > 120){
             //MORTO
             document.getElementById('res').innerHTML = `Você é um fantasma com ${idade} de idade??`
-            img.setAttribute('src', 'caveiradoidona.jpg')
+            img.setAttribute('src', 'caveira.jpg')
         }
         
     }
