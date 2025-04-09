@@ -1,0 +1,43 @@
+body{
+    background-color: rgba(43, 128, 246, 0.906);
+    font: normal 15pt Arial;
+}
+header{
+    color: white;
+    text-align: center;
+    font: normal 30pt Arial;
+    text-shadow: 1px 1px 9px rgba(5, 5, 5, 0.545);
+}
+section{
+    background-color: white;
+    border-radius: 10%;
+    height: 300pt;
+    width: 300pt;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.542);
+    font: normal 12pt arial;
+}
+footer{
+    color: white;
+    text-align: center;
+    font: italic 15pt Arial;
+    text-shadow: 1px 1px 9px rgba(5, 5, 5, 0.545);
+    
+}
+img#imagem{
+    display: block;
+    border-radius: 100%;
+    height: 350px;
+    width: 350px;
+}
+div#foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 280pt;
+}
+div#msg{
+    text-align: center;
+    font: bold 10pt arial;
+}

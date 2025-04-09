@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos dom</title>
+    <style>
+        div#area{
+            color: white;
+            background-color: black;
+            font: normal 18pt arial;
+            width: 200px;
+            height: 200;
+            line-height: 200px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+   <div id = 'area'>
+        intereja...
+   </div>
+   <div id = "conta">Contagem: 0</div>
+   <script>
+    var conta = 0
+    var d = window.document.getElementById('area')
+    d.addEventListener('mouseenter', entra)
+    d.addEventListener('mouseout', saiu)
+    d.addEventListener('click', clickk)
+
+    function clickk() {
+        d.innerHTML = 'clicou!'
+        conta = conta + 1
+        document.getElementById("conta").innerHTML = `Contagem: ${conta}`
+   }
+   function entra() {
+       d.style.background = 'grey'
+   }
+   function saiu() {
+       d.style.background = 'black'
+       d.innerHTML = 'intereja...'
+   }  
+   </script>
+</body>
+</html>

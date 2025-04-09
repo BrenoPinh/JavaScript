@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de multas!</title>
+    <style>
+        body{
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>PAÍS</h1>
+    
+    <input type="text" name="sim" id="pais">
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id = "div1"></div>
+    <p></p>
+    <div id = "div2"></div>
+    <script>    
+        
+        function clicar(){
+            var paiss = window.document.getElementById("pais").value
+            document.getElementById("div1").innerText = `Vivendo em ${paiss}`
+            if (paiss == "Brasil") {
+                document.getElementById("div2").innerHTML = 'Brasileiro lindo!'
+            } else {
+                document.getElementById("div2").innerHTML = 'Estrangeiro fedido!'
+            }
+        }
+    </script>
+</body>
+</html>

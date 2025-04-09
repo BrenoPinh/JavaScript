@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>Vamos contar</header>
+    <section>
+        <div id= form>
+              <label for="inicio">Início:</label>
+              <input type="number" name="inicio" id="inicio" placeholder="0">
+              <p></p>
+              <label for="fim">Fim:</label> 
+                <input type="number" name="fim" id="fim" placeholder="0">
+                <p></p>
+              <label for="passo">Passo:</label>
+                <input type="number" name="passo" id="passo" placeholder="0">
+                <p></p>
+              <input type="button" value="Verificar" id = 'verificar' onclick="verifique()">
+        </div>
+        <div id = res>
+        </div>
+    </section>
+    <footer>&copy;copyright</footer>
+    <script src="script.js"></script>
+</body>
+</html>

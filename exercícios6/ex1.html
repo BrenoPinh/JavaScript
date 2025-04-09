@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>Analisador de números</header>
+     <section>
+        <div id = 'form'>
+            <label for="num"> Número(1 até 100):</label>
+            <input type="number" name="num" id="num">
+            <input type="button" value="Adicionar" id = 'botao' onclick="adicionar()">
+        </div>
+        <div id = 'res'>
+            <select name="lista" id="lista" size="10"></select>
+            <p></p>
+        <div>
+        <div id = 'botoes'>
+            <input type="button" value="Finalizar" id = 'finalizar' onclick="finalizar()">
+            <input type="button" value="Limpar" id = 'limpar' onclick = 'limpar()'>
+        </div>
+        <div id = 'result'>
+            <span id = 'r1'></span>
+            <span id = 'r2'></span>
+            <span id = 'r3'></span>
+            <span id = 'r4'></span>
+            <span id = 'r5'></span>
+        </div>
+     </section>
+    <footer>&copy;copyright</footer>
+    <script src="script.js"></script>
+</body>
+</html>

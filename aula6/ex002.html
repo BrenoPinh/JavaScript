@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <style>
+        body{
+            background-color:rgb(151, 200, 153);
+            color:aliceblue;
+            font: normal 20pt Arial;          
+        }
+        p{
+            color: black;
+        }
+    </style>
+</head>
+<body>  
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição!</p>
+    <script>
+        var num = Number(window.prompt('Digite um número'))
+        var num2 = Number(window.prompt('Digite outro número'))
+        var nome = window.prompt('Qual o seu nome?')
+        var s = num + num2
+        var m = num * num2
+        var d = num / num2
+        var sal = 1500
+        window.alert(`A soma, multiplica e divisão são respectivamente: ${s}, ${m}, ${d}!`)
+        window.alert(nome.toLocaleLowerCase() + nome.toUpperCase())
+    </script>
+</body>
+</html>

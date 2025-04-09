@@ -1,0 +1,37 @@
+body{
+    background-color: rgba(43, 128, 246, 0.906);
+    font: normal 15pt Arial;
+}
+header{
+    color: white;
+    text-align: center;
+    font: normal 30pt Arial;
+    text-shadow: 1px 1px 9px rgba(5, 5, 5, 0.545);
+}
+section{
+    display: flex;
+    background-color: white;
+    border-radius: 10%;
+    height: 300pt;
+    width: 300pt;
+    padding: 40px;
+    margin: auto;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.542);
+    font: normal 15pt arial;
+    flex-direction: column;
+}
+footer{
+    color: white;
+    text-align: center;
+    font: italic 15pt Arial;
+    text-shadow: 1px 1px 9px rgba(5, 5, 5, 0.545);
+    
+}
+div#inicio{
+    float: left;
+}
+div#res {
+    text-align: center;
+    padding: 70px;
+    margin: auto;
+}

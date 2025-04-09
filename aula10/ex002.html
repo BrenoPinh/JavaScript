@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somador de números</title>
+    <style>
+        p#resul{
+            font: normal 60pt arial;
+            color:aliceblue;
+            background: 'black';
+            height: 100pt;
+            width: 100pt;
+            text-align: center;
+            line-height: 1.6;
+            border-radius: 100%;
+
+        }
+        span#primeiro{
+            font: normal 60pt arial;
+            color:aliceblue;
+            background: 'black';
+            height: 100pt;
+            width: 100pt;
+            text-align: center;
+            line-height: 1.6;
+            border-radius: 100%;
+        }
+        span#segundo{
+            font: normal 60pt arial;
+            color:aliceblue;
+            background: 'black';
+            height: 100pt;
+            width: 100pt;
+            text-align: center;
+            line-height: 1.6;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando números!</h1>
+    <input type="number" name="n1" id="n1"> +
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="Somar" id = "butao">
+    <div id = "res">Resultado: </div>
+    <span id = 'primeiro'>1 </span><span id = 'segundo'>2</span>
+    <P id = 'resul'></P>
+    <input type="button" value="Apagar" id="apague">
+    <script>
+        var Butao = document.getElementById("butao")
+        butao.addEventListener('click', clickk)
+        var Apagar = document.getElementById("apague")
+        Apagar.addEventListener('click', apagar)
+        function clickk(){
+            var n1 = window.document.getElementById("n1")
+            var n2= window.document.getElementById("n2")
+            var res = window.document.getElementById("res")
+            var nUM = Number(n1.value)
+            var nDOIS = Number(n2.value)
+            var  s = nUM + nDOIS
+            window.document.getElementById("resul").innerHTML = `${s}`
+            window.document.getElementById("resul").style.background = 'black'
+            window.document.getElementById("primeiro").innerHTML = `${nUM}`
+            window.document.getElementById("segundo").innerHTML =  `${nDOIS}`
+            window.document.getElementById("primeiro").style.background = 'black'
+            window.document.getElementById("segundo").style.background = 'black'
+        }
+        function apagar(){
+            window.document.getElementById("resul").innerHTML = null
+            window.document.getElementById("resul").style.background = 'white'
+        }
+    </script>
+    
+</body>
+</html>
